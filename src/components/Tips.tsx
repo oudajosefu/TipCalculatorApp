@@ -16,8 +16,8 @@ const Tips = ({ setTipPercent }: Props) => {
 				Select Tip %
 			</h1>
 			<div className='grid grid-cols-2 grid-rows-3 gap-4 mt-2 h-44 lg:h-28 lg:grid-cols-3 lg:grid-rows-2'>
-				{[5, 10, 15, 20, 25].map((tip) => (
-					<Button tipAmount={tip} handleClick={setTipPercent} />
+				{[5, 10, 15, 20, 25].map((tip, index) => (
+					<Button key={index} tipAmount={tip} handleClick={setTipPercent} />
 				))}
 				<input
 					className='p-5 text-xl text-right rounded-md lg:placeholder:text-2xl 2xl:placeholder:text-xl bg-grayish-cyan-100 placeholder:text-very-dark-cyan placeholder:opacity-70 placeholder:font-space-mono text-very-dark-cyan font-space-mono focus:outline-2 focus:outline-strong-cyan lg:p-3'
@@ -26,8 +26,8 @@ const Tips = ({ setTipPercent }: Props) => {
 					onChange={(event) =>
 						event.target.value
 							? setTipPercent(
-									parseFloat(event.target.value) / 100
-							  )
+								parseFloat(event.target.value) / 100
+							)
 							: setTipPercent(0)
 					}
 					onClick={(event) => {
@@ -46,7 +46,7 @@ const Tips = ({ setTipPercent }: Props) => {
 					className='hidden'
 					type='radio'
 					name='tip'
-					checked={customChecked}
+					defaultChecked={customChecked}
 				/>
 			</div>
 		</section>
