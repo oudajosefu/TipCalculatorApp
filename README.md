@@ -1,27 +1,60 @@
-# Next.js + Tailwind CSS Example
+# Frontend Mentor - Tip calculator app solution
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Deploy your own
+## Table of contents
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+-   [Overview](#overview)
+    -   [The challenge](#the-challenge)
+    -   [Screenshot](#screenshot)
+    -   [Links](#links)
+-   [My process](#my-process)
+    -   [Built with](#built-with)
+    -   [What I learned](#what-i-learned)
+-   [Author](#author)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## Overview
 
-## How to use
+### The challenge
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+Users should be able to:
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+-   View the optimal layout for the app depending on their device's screen size
+-   See hover states for all interactive elements on the page
+-   Calculate the correct tip and total cost of the bill per person
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+### Screenshots
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+![](./desktop-screenshot.png)
+![](./mobile-screenshot.png)
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+### Links
+
+-   [Solution URL](https://www.frontendmentor.io/solutions/tip-calculator-app-using-tailwind-typescript-and-create-react-app-YD75x7cWwP)
+-   [Live Site URL](https://oudajosefu.github.io/tip-calculator-app-main/)
+
+## My process
+
+### Built with
+
+-   Semantic HTML5 markup
+-   Tailwind CSS
+-   Flexbox
+-   CSS Grid
+-   Mobile-first workflow
+-   [TypeScript](https://www.typescriptlang.org/)
+-   [React](https://reactjs.org/) - JS library
+-   [Create React App](https://create-react-app.dev/) - React framework
+
+### What I learned
+
+I had some major breakthroughs with React in this project due to the various minor details with user interaction that I decided to implement. There were some setbacks that I simply overlooked for time's sake, but overall I am pretty proud of the overall outcome. Tailwind came in clutch many, many times and for that I am deeply thankful. However, there were also some times when Tailwind would have a specific trick to do what I wanted that I had to scavenge the internet for and guess and check.
+
+For example, I added a hidden radio button under the custom text input in the tips section. This allowed for deselection of the other buttons in the `name='tip'` group.
+
+I also became more comfortable with labels and their usefulness with internal inputs and divs. For example, I learned that with Tailwind, you can create a div after an input in a label and set its peer to the input so that it would style the whole label accordingly. This was very useful for the two text inputs `Bill` and `Number of People`.
+
+## Author
+
+-   Frontend Mentor - [@oudajosefu](https://www.frontendmentor.io/profile/oudajosefu)
+-   Twitter - [@oudajosefu](https://twitter.com/oudajosefu)
