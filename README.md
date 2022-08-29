@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Screenshots
 
-![](./desktop-screenshot.png)
-![](./mobile-screenshot.png)
+![screenshot](./desktop-screenshot.png)
+![screenshot](./mobile-screenshot.png)
 
 ### Links
 
@@ -44,7 +44,7 @@ Users should be able to:
 -   Mobile-first workflow
 -   [TypeScript](https://www.typescriptlang.org/)
 -   [React](https://reactjs.org/) - JS library
--   [Create React App](https://create-react-app.dev/) - React framework
+-   [Next.js](https://nextjs.org/) - React framework
 
 ### What I learned
 
