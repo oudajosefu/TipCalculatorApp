@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 -   [Solution URL](https://www.frontendmentor.io/solutions/tip-calculator-app-using-tailwind-typescript-and-create-react-app-YD75x7cWwP)
--   [Live Site URL](https://oudajosefu.github.io/tip-calculator-app-main/)
+-   [Live Site URL](https://tip-calculator-app-red.vercel.app/)
 
 ## My process
 
