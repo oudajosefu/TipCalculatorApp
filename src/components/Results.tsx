@@ -7,7 +7,10 @@ interface Props {
 	resetState: string;
 	handleClick: {
 		setBill: (bill: number) => void;
+		setTipPercent: (tipPercent: number) => void;
+		setCustomChecked: (customChecked: boolean) => void;
 		setPeople: (people: number) => void;
+		setResetState: (resetState: string) => void;
 	};
 }
 
@@ -16,7 +19,7 @@ const Results = ({
 	total,
 	people,
 	resetState,
-	handleClick: { setBill, setPeople },
+	handleClick: { setBill, setTipPercent, setCustomChecked, setPeople, setResetState },
 }: Props) => {
 	return (
 		<div className='flex flex-col justify-between md:min-h-[30vh] gap-2 xl:gap-6 p-5 lg:p-11 bg-very-dark-cyan rounded-2xl lg:w-full'>
@@ -45,10 +48,13 @@ const Results = ({
 				</section>
 			</div>
 			<button
-				className={`text-xl rounded-md ${resetState} h-11 bg-strong-cyan font-space-mono text-very-dark-cyan  active:bg-[#92DFD5] hover:bg-[#92DFD5]`}
+				className={`text-xl rounded-md ${resetState} h-11 bg-strong-cyan font-space-mono text-very-dark-cyan  hover:opacity-50`}
 				onClick={() => {
 					setBill(0);
+					setTipPercent(0);
+					setCustomChecked(true);
 					setPeople(1);
+					setResetState('opacity-50 cursor-not-allowed');
 				}}>
 				RESET
 			</button>

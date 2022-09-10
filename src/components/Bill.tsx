@@ -1,11 +1,12 @@
 import React from 'react';
 
 interface Props {
+	bill: number;
 	setBill: (bill: number) => void;
 	setResetState: (resetState: string) => void;
 }
 
-const Bill = ({ setBill, setResetState }: Props) => {
+const Bill = ({ bill, setBill, setResetState }: Props) => {
 	return (
 		<section>
 			<h1 className='font-space-mono text-very-dark-cyan opacity-70'>
@@ -15,8 +16,9 @@ const Bill = ({ setBill, setResetState }: Props) => {
 				<img src='/icon-dollar.svg' alt='icon-dollar' />
 				<input
 					className='absolute w-3/4 text-xl text-right focus:outline-none bg-grayish-cyan-100 text-very-dark-cyan right-5 top-2.5'
-					type='text'
+					type='number'
 					name='bill'
+					value={bill || ''}
 					onChange={(event) => {
 						if (event.target.value) {
 							setBill(parseFloat(event.target.value));

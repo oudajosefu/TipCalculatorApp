@@ -1,11 +1,12 @@
 import React from 'react';
 
 interface Props {
+	people: number;
 	setPeople: (people: number) => void;
 	setResetState: (resetState: string) => void;
 }
 
-const People = ({ setPeople, setResetState }: Props) => {
+const People = ({ people, setPeople, setResetState }: Props) => {
 	return (
 		<section>
 			<h1 className='font-space-mono text-very-dark-cyan opacity-70'>
@@ -15,8 +16,9 @@ const People = ({ setPeople, setResetState }: Props) => {
 				<img src='/icon-person.svg' alt='icon-dollar' />
 				<input
 					className='absolute w-1/2 text-xl text-right focus:outline-none bg-grayish-cyan-100 text-very-dark-cyan right-5 top-2.5'
-					type='text'
+					type='number'
 					name='number-of-people'
+					value={people !== 1 ? people : ''}
 					onChange={(event) => {
 						if (event.target.value) {
 							setPeople(parseInt(event.target.value));
