@@ -17,7 +17,7 @@ const People = ({ people, setPeople, setResetState }: Props) => {
 				<input
 					className='absolute w-1/2 text-xl text-right focus:outline-none bg-grayish-cyan-100 text-very-dark-cyan right-5 top-2.5'
 					type='text'
-					inputMode='decimal'
+					inputMode='numeric'
 					name='number-of-people'
 					value={people !== 1 ? people : ''}
 					onChange={(event) => {
