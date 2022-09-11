@@ -16,7 +16,8 @@ const People = ({ people, setPeople, setResetState }: Props) => {
 				<img src='/icon-person.svg' alt='icon-dollar' />
 				<input
 					className='absolute w-1/2 text-xl text-right focus:outline-none bg-grayish-cyan-100 text-very-dark-cyan right-5 top-2.5'
-					type='number'
+					type='text'
+					inputMode='decimal'
 					name='number-of-people'
 					value={people !== 1 ? people : ''}
 					onChange={(event) => {

@@ -27,7 +27,8 @@ const Tips = ({ tipPercent, customChecked, setTipPercent, setCustomChecked }: Pr
 				))}
 				<input
 					className='p-5 text-xl text-right rounded-md lg:placeholder:text-2xl 2xl:placeholder:text-xl bg-grayish-cyan-100 placeholder:text-very-dark-cyan placeholder:opacity-70 placeholder:font-space-mono text-very-dark-cyan font-space-mono focus:outline-2 focus:outline-strong-cyan lg:p-3'
-					type='number'
+					type='text'
+					inputMode='decimal'
 					placeholder='Custom'
 					value={![0, ...tipAmounts].includes(tipPercent * 100) ? tipPercent * 100 : ''}
 					onChange={(event) =>

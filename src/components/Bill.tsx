@@ -16,7 +16,8 @@ const Bill = ({ bill, setBill, setResetState }: Props) => {
 				<img src='/icon-dollar.svg' alt='icon-dollar' />
 				<input
 					className='absolute w-3/4 text-xl text-right focus:outline-none bg-grayish-cyan-100 text-very-dark-cyan right-5 top-2.5'
-					type='number'
+					type='text'
+					inputMode='decimal'
 					name='bill'
 					value={bill || ''}
 					onChange={(event) => {
