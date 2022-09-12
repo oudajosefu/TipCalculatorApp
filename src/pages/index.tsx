@@ -29,8 +29,8 @@ const Home: NextPage = () => {
         <link rel='apple-touch-icon' href='/apple-icon.png' />
       </Head>
 
-      <main className="flex flex-col justify-start min-h-screen select-none lg:items-center bg-grayish-cyan-200 dark:bg-gray-600 lg:justify-center">
-        <Header height='flex h-12 md:h-36 lg:h-auto lg:-mt-20' />
+      <main className="flex flex-col justify-start select-none md:min-h-screen lg:items-center bg-grayish-cyan-200 dark:bg-gray-600 lg:justify-center">
+        <Header height='flex h-12 md:h-36 lg:h-auto lg:-mt-20 hidden md:flex' />
         <div className='flex flex-col gap-4 bg-white dark:bg-grayish-cyan-400 justify-evenly rounded-3xl md:min-h-fit md:rounded-t-3xl p-7 lg:p-11 lg:w-2/3 2xl:w-1/2 lg:rounded-3xl lg:flex-row lg:mt-16 lg:h-1/2 lg:gap-11'>
           <div className='flex flex-col flex-auto gap-2 justify-evenly'>
             <Bill bill={bill} setBill={setBill} setResetState={setResetState} />
