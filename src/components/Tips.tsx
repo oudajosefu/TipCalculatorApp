@@ -30,7 +30,7 @@ const Tips = ({ tipPercent, customChecked, handleClick: { setTipPercent, setCust
 					}} />
 				))}
 				<input
-					className='p-5 text-xl text-right rounded-md outline-none lg:placeholder:text-2xl 2xl:placeholder:text-xl bg-grayish-cyan-100 dark:bg-grayish-cyan-200 placeholder:text-very-dark-cyan placeholder:opacity-70 placeholder:font-space-mono text-very-dark-cyan font-space-mono focus:outline focus:outline-2 focus:outline-strong-cyan lg:p-3 invalid:text-red-500'
+					className='p-5 text-xl text-right rounded-md outline-none lg:placeholder:text-2xl 2xl:placeholder:text-xl bg-grayish-cyan-100 dark:bg-[hsl(189,17%,68%)] placeholder:text-very-dark-cyan placeholder:opacity-70 placeholder:font-space-mono text-very-dark-cyan font-space-mono focus:outline focus:outline-2 focus:outline-strong-cyan lg:p-3 invalid:text-red-500'
 					type='number'
 					inputMode='decimal'
 					pattern='[0-9]*(\.[0-9]+)?'

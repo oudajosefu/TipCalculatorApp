@@ -31,9 +31,13 @@ const Results = ({
 							/ person
 						</p>
 					</div>
-					<p className='text-3xl lg:text-4xl xl:text-5xl text-strong-cyan dark:opacity-70'>
+					<button className='text-3xl outline-none lg:text-4xl xl:text-5xl text-strong-cyan dark:opacity-70'
+						onClick={(event) => {
+							const target = event.target as HTMLButtonElement;
+							navigator.clipboard.writeText(target.innerText);
+						}}>
 						${(tip / people).toFixed(2)}
-					</p>
+					</button>
 				</section>
 				<section className='flex justify-between text-white lg:flex-col xl:flex-row font-space-mono dark:text-grayish-cyan-100'>
 					<div>
@@ -42,9 +46,13 @@ const Results = ({
 							/ person
 						</p>
 					</div>
-					<p className='text-3xl lg:text-4xl xl:text-5xl text-strong-cyan dark:opacity-70'>
+					<button className='text-3xl outline-none lg:text-4xl xl:text-5xl text-strong-cyan dark:opacity-70'
+						onClick={(event) => {
+							const target = event.target as HTMLButtonElement;
+							navigator.clipboard.writeText(target.innerText);
+						}}>
 						${(total / people).toFixed(2)}
-					</p>
+					</button>
 				</section>
 			</div>
 			<button
